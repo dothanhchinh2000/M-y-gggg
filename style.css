@@ -1,0 +1,101 @@
+.background{
+    width: 100%;
+}
+.background img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 1070px;
+    height: 800px;
+    background-color: white;
+    margin: auto;
+}
+.header-right{
+    
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.new{
+  
+    float: right;
+    margin-right: -40%;
+    margin-top: 12px;
+    
+}
+.new button{
+    width: -40%;
+    padding: 0,5px;
+    border-radius: 10%;
+    border: 1px solid black;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-block;
+}
+.new1{
+    float: right;
+    margin-right: -70%;
+    margin-top: 12px;
+    height: 32px;
+   
+}
+.h100{
+    height: 100px;
+}
+.ip{
+    float: left;
+    margin-top: 17px;
+    margin-left: 279px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ips{
+ margin-top: 19px;
+}
+.header-left a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: gray;
+}
+
+
+#menu ul{
+    list-style-type: none;
+    background:#dddddd;
+  
+}
+#menu ul li{
+    color: #f1f1f1;
+    display: inline;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+#menu ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+ 
+     
+}
+#menu ul li a:hover{
+    background: #f1f1f1;
+    color:#333;
+}
+#menu ul li > .sub-menu{
+    display: none;
+    position: absolute;
+
+}
+#menu ul li:hover .sub-menu{
+    display: block;
+}
+
+
+
