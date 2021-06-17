@@ -18,7 +18,7 @@
     margin-left: 5px;
 }
 .new{
-  
+   
     float: right;
     margin-right: -40%;
     margin-top: 12px;
@@ -28,7 +28,7 @@
     width: -40%;
     padding: 0,5px;
     border-radius: 10%;
-    border: 1px solid black;
+    border: 1px solid white;
     height: 32px;
     line-height: 30px;
     padding: 0 10px;
@@ -38,6 +38,7 @@
     display: inline-block;
 }
 .new1{
+    border: 1px solid white;
     float: right;
     margin-right: -70%;
     margin-top: 12px;
@@ -70,7 +71,7 @@
     background:#dddddd;
   
 }
-#menu ul li{
+#menu ul li {
     color: #f1f1f1;
     display: inline;
     width: 120px;
@@ -96,6 +97,48 @@
 #menu ul li:hover .sub-menu{
     display: block;
 }
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    opacity: 0.7;
+    }
+    
+    #myBtn:hover {
+    background-color: #f1f1f1;
+    }
+
+
+.dropdown{
+        padding-top: 0;
+        margin-bottom: 5px;
+        float: left;
+        position: relative;
+        display: inline-block;
+     }
+     /*sub-menu*/
+.dropdown-content{
+    display:inline;
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    z-index: 1;
+    list-style: none;
+ }
+ .dropdown:hover .dropdown-content{
+    display: block;
+ }
 
 
 
