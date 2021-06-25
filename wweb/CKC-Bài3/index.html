@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- su dung thu vien jquey -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js&quot; integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+
+     <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Bài Tập 1</h1>
+    <h2 id="h2demo">My First JavaScript</h2>
+    <button type="button" onclick="showResult()">
+        Click me to display Date and Time.
+    </button>
+    <p id="demo"></p>
+    <!-- bai tap javascript front-end số 1 -->
+    <p id="text">JAVASCRIPT FRONT-END 1</p>
+    <button onclick="changeColorAndFontSize()">CLICK HERE TO CHANGE COLOR AND FONT SIZE ID TEXT</button>
+    <!-- END BAI TAP 1 -->
+    <!-- bai tap javascript font end 2 -->
+    <br>
+    <h1>Bài Tập 2</h1>
+    <form onsubmit="showInformation()" id="form1">
+        Firt Name: <input type="text" name="fname" id="fname">
+        <br>
+        Last Name: <input type="text" name="lname" id="lname">
+        <br>
+        <input type="submit" value="GUI THONG TIN">
+    </form>
+    <!-- end bai tap 2 -->
+    <br>
+
+    <h1>Bài Tập 3</h1>
+    <div class="background">
+        <button class="btn-random">Click me</button>
+    </div>
+    <div id="content" style="padding: 20px; background: #ddd; color: white; margin: 40px 0px;">
+        CHÀO MỪNG BẠN ĐẾN VỚI FREETUTS.NET
+    </div>
+
+    <input type="button" id="btn1" value="Đổi Backgroud màu đỏ"/>
+    <input type="button" id="btn2" value="Đổi Backgroud màu xanh"/>
+
+    <script language="javascript">
+        // Lấy 2 button và thẻ div
+        var button1 = document.getElementById("btn1");
+        var button2 = document.getElementById("btn2");
+        var div = document.getElementById('content');
+
+        // Thiết lập click cho button 1
+        button1.onclick = function () {
+            div.style.background = "red";
+        };
+
+        // Thiết lập click cho button 2
+        button2.onclick = function () {
+            div.style.background = "blue";
+        };
+    </script>
+   <!-- end bai tap 3 -->
+
+   <h1>Bài Tập 4</h1>
+<h1 class="democlass">Hello World</h1>
+<a href="http://google.com">google.com</.a>
+
+<p>Click the button to display the value of the class attribute of the h1 element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("a")[0].getAttribute("href"); 
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+Read about the <a id="myAnchor" href="dom_obj_attributes.asp" target="_blank">Attr object</a>.
+
+<p>Click the button to display the value of the target attribute node of the link above.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementById("myAnchor");
+  var attr = elmnt.getAttributeNode("target").value;
+  document.getElementById("demo").innerHTML = attr;
+}
+</script>
+<br>
+<br>
+<h1>Bài Tập 4</h1>
+
+<p>
+    <a id="somelink" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="http://www.google.com">Google</a>
+</p>
+<button onclick="getAttributes()">Click here</button>
+
+  <!-- end bai tap 4 em chưa hiểu rõ getattribute ạ -->
+
+
+  <h1>Bài Tập 5</h1>
+    <script type="text/javascript">
+    function displayResult()
+    {
+        document.getElementById("myTable").insertRow(-1).innerHTML = '<td>1</td><td>2</td>';
+    }
+    </script>
+
+   <h1>BT5</h1>
+      
+    <table id="myTable" border="1">
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+        </tr>
+        <tr>
+            <td>cell 3</td>
+            <td>cell 4</td>
+        </tr>
+    </table>
+    <br />
+    <button type="button" onclick="displayResult()">Insert new row</button> 
+    
+    
+    <!-- end bai tap 5-->
+
+
+    <h1>bài 6</h1>
+  
+    <table id="MYbang" border="1">
+        <tr>
+            <td id="cell1">
+                row1 cell1
+            </td>
+            <td id="cell2">
+                row2 cell2
+            </td>
+        </tr>
+        <tr>
+            <td id="cell3">
+                row2 cell1
+            </td>
+            <td id="cell4">
+                row2 cell2
+            </td>
+        </tr>
+    </table><br />
+    <button class="btn btn-secondary" id="changecontent">thay đổi nội dung</button>
+
+
+<!-- end bai tap 6-->
+
+
+    <h1>Bài Tập 7</h1>
+    <form action ="#">
+        Số Dòng : <input type="text" id="sodong"/><br>
+        Số Cột : <input type="text" id="socot"/><br>
+       
+       <input type="button" value="Tạo Table Động" onclick="return Taotable()"/>
+      </form>
+      <br>
+      <div id="container"></div>
+      <script type = "text/javascript">
+          function Taotable(){
+          var sodongId = document.getElementById ("sodong");
+          var socotId = document.getElementById ("socot");
+            
+            
+         if(isNaN(sodong.value)||isNaN(socot.value)){
+             alert("Nhập số dòng và số cột");
+             return false;
+         }else{
+           var divId=document.getElementById("container");
+           var soDong = parseInt(sodongId.value);
+           var soCot = parseInt(socotId.value);
+            
+           var tagtable=document.createElement("table");
+           tagtable.border = 1;
+           for(i=0;i<soDong;i++){
+             var tagTR=document.createElement("tr");
+             tagtable.appendChild(tagTR);
+             for(j=0;j<soCot;j++){
+             var tagTD=document.createElement("td");
+             var textNode=document.createTextNode("ô"+ i+ ","+ j);
+             tagTD.appendChild(textNode);
+             tagTR.appendChild(tagTD);
+             }
+           }
+           divId.appendChild(tagtable);
+           return true;
+         } 
+      }
+      </script>
+          <!-- end bai tap 7-->
+
+     <h1>Bài Tập 8</h1>
+     
+
+<form>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="email" placeholder="Email Address">
+    <input type="button" class="add-row" value="Add Row">
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>Select</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" name="record"></td>
+            <td>Thành Chinh</td>
+            <td>dothanhcinh@mail.com</td>
+        </tr>
+    </tbody>
+</table>
+<button type="button" class="delete-row">Delete Row</button>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".add-row").click(function(){
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + email + "</td></tr>";
+            $("table tbody").append(markup);
+        });
+         
+        // Find and remove selected table rows
+        $(".delete-row").click(function(){
+            $("table tbody").find('input[name="record"]').each(function(){
+                if($(this).is(":checked")){
+                    $(this).parents("tr").remove();
+                }
+            });
+        });
+    });    
+</script>
+
+    <!-- end bai tap 8-->
+
+     <br>
+
+     <h1>Bài Tập 9 File Riêng</h1>
+     
+        
+        <!-- end bai tap 9-->
+
+        <h1>bài tập 10 File Riêng</h1>
+        <script>
+			window.onresize = displayWindowSize;
+			window.onload = displayWindowSize;
+
+			function displayWindowSize() {
+				myWidth = window.innerWidth;
+				myHeight = window.innerHeight;
+				// your size calculation code here
+				document.getElementById("dimensions").innerHTML =
+					myWidth + "x" + myHeight;
+			}
+		</script>
+        <!-- end bai tap 10-->
+
+    
+
+
+
+  
+
+    
+    
+</body>
+</html>
